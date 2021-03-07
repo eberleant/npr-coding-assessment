@@ -8,6 +8,11 @@ import java.nio.file.Paths;
 import org.apache.commons.io.FilenameUtils;
 
 public class Main {
+    /**
+     * Main method takes in file(s), validates emails, sorts emails by domain, and outputs result to file
+     * @param args string array of input filenames
+     * @throws IOException if an I/O exception has occured (eg, file not found)
+     */
     public static void main(String[] args) throws IOException {
         for (String inputFilename : args) {
             String inputFileContents = Files.readString(Paths.get(inputFilename), StandardCharsets.US_ASCII);
