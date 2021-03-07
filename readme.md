@@ -21,4 +21,4 @@ There are several assumptions made regarding the email format. A description of 
 * "non-deliverable" domains (`x@example.com` is accepted normally)
 * each label in a domain may have any length > 0 (in reality, they must be less than 63 characters)
 
-(If I was coding an actual product, I would probably copy a regular expression from StackOverflow rather than writing my own, since that would be more likely to handle all the weird cases.)  Additionally, duplicate emails are allowed, and duplicate domains may be outputted in any order.
+(If I was coding an actual product, I would probably copy a regular expression from StackOverflow rather than writing my own, since that would be more likely to handle all the weird cases.) Additionally, duplicate emails are allowed, and duplicate domains may be outputted in any order.
