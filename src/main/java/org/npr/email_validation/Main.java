@@ -1,11 +1,12 @@
 package org.npr.email_validation;
 
+import org.apache.commons.io.FilenameUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import org.apache.commons.io.FilenameUtils;
 
 public class Main {
     /**
