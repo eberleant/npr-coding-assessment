@@ -5,11 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EmailValidatorTest {
-
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-    }
-
     @Test
     public void testBasicValid() {
         // from https://en.wikipedia.org/wiki/Email_address#Examples (excluding quoted local parts)
