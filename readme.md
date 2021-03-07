@@ -14,10 +14,11 @@ In project directory, run `mvn exec:java -Dexec.mainClass=org.npr.email_validati
 
 ## Assumptions and Limitations
 There are several assumptions made regarding the email format. A description of the syntax of a valid email address can be found (https://en.wikipedia.org/wiki/Email_address#Syntax)[here]. However, the following valid email address formats are not handled by this program:
+
 * comments (`(comment)abc@abc.com`, `abc@(comment)abc.com`, etc)
 * quoted local part (`"This is a valid.. email"@abc.com`)
 * IP address domain (`jsmith@[192.168.2.1]` or `jsmith@[IPv6:2001:db8::1]`)
 * "non-deliverable" domains (`x@example.com` is accepted normally)
 * each label in a domain may have any length > 0 (in reality, they must be less than 63 characters)
 
-Additionally, duplicate emails are allowed, and duplicate domains may be outputted in any order.
+(If I was coding an actual product, I would probably copy a regular expression from StackOverflow rather than writing my own, since that would be more likely to handle all the weird cases.)  Additionally, duplicate emails are allowed, and duplicate domains may be outputted in any order.
