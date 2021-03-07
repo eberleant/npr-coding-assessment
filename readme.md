@@ -13,7 +13,7 @@ JavaDocs can be viewed from the `docs` folder inside the project directory. You 
 In project directory, run `mvn package`
 
 ## Run
-In project directory, run `mvn exec:java -Dexec.mainClass=org.npr.email_validation.Main -Dexec.args="filename.txt"`. Replace `filename.txt` with the path of the input file. If the path is relative, it should be relative to the project directory. The output file is based on the input filename; in this case, the output file would be `filename_output.txt`. You can also give a list of space-separated filenames, like `-Dexec.args="first.txt second.txt"`. The output files would then be called `first_output.txt` and `second_output.txt`.
+In project directory, run `mvn exec:java -Dexec.mainClass=org.npr.email_validation.Main -Dexec.args="test_emails.txt"`. Replace `test_emails.txt` with the path of the input file. If the path is relative, it should be relative to the project directory. The output file is based on the input filename; in this case, the output file would be `test_emails_output.txt`. You can also give a list of space-separated filenames, like `-Dexec.args="first.txt second.txt"`. The output files would then be called `first_output.txt` and `second_output.txt`. A test file called `test_emails.txt` is provided in the project directory.
 
 ## Test
 In project directory, run `mvn test`
