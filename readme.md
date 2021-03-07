@@ -2,6 +2,9 @@
 ## Summary
 This program takes in one or more filenames, validates each line as an email address, sorts by domain, and saves the output (excluding any invalid email addresses) into a separate file.
 
+## JavaDocs
+JavaDocs can be viewed from the `docs` folder inside the project directory. You can start browsing from `docs/index.html`.
+
 ## Dependencies
 * JDK 13
 * Maven 3
