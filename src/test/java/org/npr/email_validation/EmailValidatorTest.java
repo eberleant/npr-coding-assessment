@@ -72,5 +72,7 @@ class EmailValidatorTest {
         assertFalse(EmailValidator.isValid("abc@-"));
         assertFalse(EmailValidator.isValid("abc@-abc"));
         assertFalse(EmailValidator.isValid("abc@abc-"));
+        assertFalse(EmailValidator.isValid("abc@.abc"));
+        assertFalse(EmailValidator.isValid("abc@."));
     }
 }
