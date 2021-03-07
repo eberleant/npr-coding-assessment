@@ -59,6 +59,18 @@ class EmailValidatorTest {
 
     @Test
     public void testDomainValid() {
+        assertTrue(EmailValidator.isValid("abc@a"));
+        assertTrue(EmailValidator.isValid("abc@abc"));
+        assertTrue(EmailValidator.isValid("abc@abc.org.x.com"));
+        assertTrue(EmailValidator.isValid("abc@ABC0123456789-abc.COM"));
+    }
 
+    @Test
+    public void testDomainInvalid() {
+        assertFalse(EmailValidator.isValid("abc@"));
+        assertFalse(EmailValidator.isValid("abc@abc."));
+        assertFalse(EmailValidator.isValid("abc@-"));
+        assertFalse(EmailValidator.isValid("abc@-abc"));
+        assertFalse(EmailValidator.isValid("abc@abc-"));
     }
 }
